@@ -1,0 +1,29 @@
+package javafor;
+
+import java.util.Scanner;
+
+public class javafor2 {
+
+
+    public static void main(String [] args)
+
+    {
+
+        Scanner number = new Scanner(System.in);
+        System.out.print("Bir değer gir: ");
+        int n = number.nextInt();
+        int t = 1;
+
+
+        for (int i = 1; i<=n; i++)
+        {
+            t *= i;
+        }
+
+        System.out.println(n + "! = " + t); // Sonuç
+
+        number.close();
+
+
+    }
+}
