@@ -1,0 +1,27 @@
+package javaprojeler;
+
+import java.util.Scanner;
+
+public class javafor1
+{
+    public static void main(String [] args)
+    {
+        Scanner giris = new Scanner(System.in);
+        System.out.print("N girin: ");
+        int n = giris.nextInt();
+        int t = 0;
+
+
+        for (int i = 1; i <=n; i++)
+            t += i;
+
+        {
+            System.out.println("Toplam değer: " +t);
+
+        }
+
+
+
+    }
+
+}
