@@ -1,0 +1,29 @@
+package javafor;
+
+import java.util.Scanner;
+
+public class javafor3
+{
+    public static void main(String [] args)
+    {
+
+        Scanner number = new Scanner(System.in);
+        System.out.print("Bir değer girin: ");
+        int n = number.nextInt();
+
+        System.out.println("1' den " +n+ "'e kadar olan tek sayılar: ");
+
+        for (int i = 1; i <= n; i++)
+        {
+            if (i % 2 != 0) {  // Mod değeri alıyoruz buradan eğer olarak mod değeri 2'ye bölününce sıfır vermeyenler yani tek sayıları çekiyoruz
+
+                System.out.print(i + " ");
+            }
+
+        }
+
+
+
+
+    }
+}
