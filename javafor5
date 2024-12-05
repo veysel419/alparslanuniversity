@@ -1,0 +1,29 @@
+package projeler;
+
+import java.util.Scanner;
+
+public class javafor5
+{
+
+    public static void main(String [] args)
+    {
+        Scanner giris = new Scanner(System.in);
+        System.out.print("Kaç sayı gireceksin? : ");
+        int n = giris.nextInt();
+        System.out.println(+n+ " tane sayı giriceksiniz");
+
+        int toplam = 0;
+
+        for (int i = 1; i <=n; i++)
+        {
+            System.out.print("Sayı girin: ");
+            int sayi = giris.nextInt();
+            toplam += sayi;
+
+        }
+        // Ortalama
+        int ort = toplam/n;
+        System.out.print("Ortalama: " + ort);
+
+    }
+}
