@@ -1,0 +1,27 @@
+package javafor;
+
+import java.util.Scanner;
+
+public class javafor4
+{
+
+    public static void main(String [] args)
+    {
+        Scanner giris = new Scanner(System.in);
+        System.out.print("Kaç sayı gireceksin?: ");
+        int n = giris.nextInt();
+        System.out.println(+n+ " tane sayı gireceksin");
+
+        int toplam = 0;
+
+        for (int i = 1; i <=n; i++)
+        {
+            System.out.print("Sayı gir: ");
+            int sayi = giris.nextInt();
+            toplam += sayi * sayi; //  Sayının karesi alınır
+
+        }
+        System.out.print("Sayıların karelerinin toplamı: " + toplam);
+
+    }
+}
