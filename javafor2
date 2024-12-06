@@ -8,7 +8,7 @@ public class javafor2 {
     public static void main(String [] args)
 
     {
-
+        System.out.println("Hoş geldin! Bu yazılım sayesinde faktöriyel hesaplama yapabilirsin.");
         Scanner number = new Scanner(System.in);
         System.out.print("Bir değer gir: ");
         int n = number.nextInt();
